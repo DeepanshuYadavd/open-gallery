@@ -23,9 +23,10 @@ header h2 {
     position: relative;
     padding: 2rem;
 }
-header span{
+
+header span {
     /* border: 2px solid black; */
-    position:absolute;
+    position: absolute;
     font-size: 0.75rem;
     top: 90px;
     left: 145px;
@@ -66,19 +67,20 @@ header span{
     cursor: pointer;
 }
 
-.gallery{
+.gallery {
     /* border: 2px solid black; */
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     padding: 2rem 0rem;
     row-gap: 8rem;
     column-gap: 1.5rem;
     width: 80%;
     margin: auto;
-    
+
 
 }
-.gallery-content img{
+
+.gallery-content img {
     /* border: 2px solid rgb(23, 179, 72); */
     height: 100%;
     width: 100%;
@@ -86,7 +88,8 @@ header span{
     border-radius: 2rem;
     box-shadow: 0px 0px 5px rgb(240, 132, 165);
 }
-.gallery-info{
+
+.gallery-info {
     /* border: 2px solid rgb(44, 23, 179); */
     display: flex;
     justify-content: space-between;
@@ -97,21 +100,24 @@ header span{
 
 
 }
-.gallery-info p{
+
+.gallery-info p {
     /* border: 2px solid rgb(179, 65, 23); */
     color: rgb(251, 249, 249);
     font-size: 1rem;
     font-weight: bolder;
 }
-.gallery-info a{
+
+.gallery-info a {
     /* border: 2px solid rgb(179, 23, 145); */
     /* text-decoration: none; */
     color: rgb(251, 248, 248);
     font-size: 1rem;
     font-weight: bolder;
 }
+
 /* more button */
-.nav-btn{
+.nav-btn {
     /* border:2px solid white; */
     display: flex;
     align-items: center;
@@ -119,18 +125,29 @@ header span{
     margin: 3rem 0rem;
 
 }
-.more{
+
+.more {
     /* border: 2px solid red; */
     border: none;
     outline: none;
     appearance: none;
-    color:black;
+    color: black;
     padding: 0.7rem;
     font-size: 1rem;
     /* border-radius: 1rem; */
     cursor: pointer;
     transition: 0.3s;
 }
-.more:hover{
+
+.more:hover {
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 374px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    }
+
 }
